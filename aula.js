@@ -1,29 +1,18 @@
-class Pessoa {
-    nome;
-    idade;
-    peso;
+const alunos = ['Gilmar'];
+alunos.push('Dani');
 
-    constructor(nome,idade,peso){
-        this.nome = nome;
-        this.idade = idade;
-        this.peso = peso;
-    }
+alunos;
+console.log(alunos);
 
-    informacoes()
-    {
-        if(this.nome == undefined || this.idade == undefined || this.peso == undefined)
-        {
-            console.log('Informações incompletas!');
-            console.log(this)
-        }
-        else{
-            console.log(`Meu nome é ${this.nome} , Minha idade é ${this.idade} e Meu Peso é ${this.peso}!`);
-        }
-        
-    }
+
+const notas = [];
+notas.push(8);
+notas.push(8);
+notas.push(8);
+notas.push(8);
+let soma = 0;
+for (let index = 0; index < notas.length; index++) {
+    soma = soma + notas[index];
 }
 
-(function(){
- const gilmar = new Pessoa();
- gilmar.informacoes();
-})();
+console.log('Media : '+(soma/notas.length));

@@ -1,5 +1,6 @@
-import a from "./funcoesAuxiliares.mjs";
+import funcAux from "./funcoesAuxiliares.mjs";
 
 (function(){
-    console.log(a.gets());
+    console.log(funcAux.gets());
+    funcAux.print('Teste Print');
 })()
